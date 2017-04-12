@@ -54,6 +54,21 @@ public class StackTest {
 		
 		assertEquals(expected, popped);
 	}
+	
+	@Test
+	public void push8And9AndFirstPopShouldBe9AndSecondPopShouldBe8(){
+		stack.push(8);
+		stack.push(9);
+		int expectedFirst = 9;
+		int expectedSecond = 8;
+		int poppedFirst;
+		int poppedSecond;
+		
+		poppedFirst = stack.pop();
+		poppedSecond = stack.pop();
+		assertEquals(expectedFirst,poppedFirst);
+		assertEquals(expectedSecond,poppedSecond);
+	}
 
 	
 }
