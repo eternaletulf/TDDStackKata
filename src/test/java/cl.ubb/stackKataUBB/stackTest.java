@@ -4,11 +4,12 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class stackTest {
+public class StackTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void EmptyIfStackIsNew() {
+		Stack stack = new Stack();
+		assertTrue(stack.isEmpty());
 	}
 
 }
