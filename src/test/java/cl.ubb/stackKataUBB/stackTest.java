@@ -42,6 +42,18 @@ public class StackTest {
 		
 		assertEquals(expected, stack.size());
 	}
+	
+	@Test
+	public void push6And7AndPopShouldBe7(){
+		stack.push(6);
+		stack.push(7);
+		int expected = 7;
+		int popped;
+		
+		popped = stack.pop();
+		
+		assertEquals(expected, popped);
+	}
 
 	
 }
